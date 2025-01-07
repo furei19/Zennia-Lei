@@ -1,0 +1,36 @@
+.now-playing {
+    background-color: white;
+    height: 260px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.now-playing img {
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: block;
+}
+
+.playlist-song {
+    background-color: white;
+    display: block;
+    height: 80px;
+    padding: 10px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.playlist-song h4 {
+    margin-top: 20px;
+}
+
+.playlist-song img {
+    float: left;
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,89 @@
+.landing-Page {
+  margin: -40px 0px -40px 0px;
+  background-image: url(contents/bg1.png);
+  width: 375px;
+  height: 560px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.spacer1 {
+  height: 320px;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.readButton {
+  font-size: 25px;
+  background-color: #adccce;
+  color: white;
+  padding: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 25px 5px 25px 5px;
+  text-decoration: none;
+  display: inline-block;
+  animation: scaleIn ease-in-out 1s;
+}
+
+.readButton:hover {
+  background-color: #fcaa27;
+  transform: scale(1.1);
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.spacer2 {
+  margin-top: 50px;
+  height: 100px;
+}
+
+h2 {
+  font-size: 20px;
+  width: 100px;
+  color: black;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.slider {
+  overflow-y: hidden;
+}
+
+.slider div {
+  display: inline-block;
+}
+
+.slider div p {
+  margin-top: -5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.slider div img {
+  transition: transform 0.2s;
+  width: 100px;
+}
+
+.slider div img:hover {
+  -ms-transform: initial;
+  -webkit-transform: initial;
+  transform: initial;
+}
+
+.slider div img:active {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: handwriting;
+    src: url(Pixelify_Sans/PatrickHand-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+body,
+html {
+    font-family: handwriting;
+    background-color: #adccce;
+    user-select: none;
+}
+
+.spacerFooter {
+    height: 100px;
+}
+
+table {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: white;
+    height: 90px;
+    width: 100%;
+}
+
+.buttons {
+    background-color: #adccce;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.buttons:hover {
+    background-color: #adccce;
+    color: black;
+}
+
+.buttons:active {
+    background-color: white;
+    color: black;
+}
