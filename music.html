@@ -11,6 +11,18 @@
 
   <body>
     <center>
+      <!-- Heading Spacer -->
+      <div class="nav-bar">
+        <img class="img-logo" src="contents/montsary1.jpg" alt="" />
+        <p>Zen & Lei</p>
+        <a href="index.html">
+          <img class="home-button" src="contents/home_icon.png" alt=""
+        /></a>
+      </div>
+      <div class="header-spacer"></div>
+      <!-- Heading Spacer -->
+
+      <!-- Loading Screen -->
       <div id="loading-screen">
         <div class="loading-spacer"></div>
         <div
@@ -37,185 +49,309 @@
         </div>
         <p class="loading-message">loading</p>
       </div>
+      <!-- Loading Screen -->
 
       <div id="main-content" class="main-content">
-        <div class="now-playing">
-          <img id="songImage" src="audio-banners/placeholder.png" alt="" />
-          <audio controls id="audioPlayer">
-            <source src="" type="audio/mp3" />
-          </audio>
-          <h2 id="songTitle">No song playing</h2>
-        </div>
-        <div class="playlist-1">
+        <div class="showcase">
+          <!-- Wrapped Titles -->
           <div
-            class="playlist-song"
-            data-audio="audio/Al Green - Lets Stay Together.mp3"
-            onclick="playMusic(this)"
+            class="wrapped-title"
+            onclick="toggle_drop_down(this, 'wrapped-container-2')"
           >
-            <img src="audio-banners/al-green-let's-stay-together.png" alt="" />
-            <h4 id="currentSong">Al Green - Let's Stay Together</h4>
+            <div class="circle"></div>
+            <p>Our 2025 Playlist</p>
+            <div class="arrow"></div>
+            <div class="arrow-down"></div>
+          </div>
+          <div class="wrapped-container" id="wrapped-container-2">
+            <div>
+              <p>Nothing here yet!</p>
+            </div>
           </div>
           <div
-            class="playlist-song"
-            data-audio="audio/Anthony Lazaro - Moody Wind.mp3"
-            onclick="playMusic(this)"
+            class="wrapped-title"
+            onclick="toggle_drop_down(this, 'wrapped-container')"
           >
-            <img src="audio-banners/anthony-lazaro-moody-wind.png" alt="" />
-            <h4 id="currentSong">Anthony Lazaro - Moody Wind</h4>
+            <div class="circle"></div>
+            <p>Our 2024 Playlist</p>
+            <div class="arrow"></div>
+            <div class="arrow-down"></div>
           </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/Bread - Guitar Man.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/bread-guitar-man.png" alt="" />
-            <h4 id="currentSong">Bread - Guitar Man</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/Dolly Parton - Here You Come Again.mp3"
-            onclick="playMusic(this)"
-          >
-            <img
-              src="audio-banners/dolly-parton-here-you-come-again.png"
-              alt=""
-            />
-            <h4 id="currentSong">Dolly Parton - Here you come again</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/Dolly Parton, Kenny Rogers - Islands In the Stream.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/islands-in-the-stream.png" alt="" />
-            <h4 id="currentSong">
-              Dolly Parton & Kenny Rogers- Islands in the stream
-            </h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/Gilbert O'Sullivan - Alone Again (Naturally).mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/alone-again-naturally.png" alt="" />
-            <h4 id="currentSong">
-              Gilbert O'Sullivan - Alone Again (Naturally)
-            </h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/Green Day -Last Night on Earth.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/last-night-on-earth-green-day.png" alt="" />
-            <h4 id="currentSong">Green Day - Last night on earth</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/John Mayer - You're Gonna Live Forever In Me.mp3"
-            onclick="playMusic(this)"
-          >
-            <img
-              src="audio-banners/you're-gonna-live-forever-in-me.png"
-              alt=""
-            />
-            <h4 id="currentSong">
-              John Mayer - You're gonna live forever in me
-            </h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/Skeeter Davis - The End Of The World.mp3"
-            onclick="playMusic(this)"
-          >
-            <img
-              src="audio-banners/skeeter-davis-the-end-of-the-world.png"
-              alt=""
-            />
-            <h4 id="currentSong">Skeeter Davis - The end of the world</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/Somethin' Stupid.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/somethin-stupid-frank-sinatra.png" alt="" />
-            <h4 id="currentSong">Frank Sinatra - Somethin' Stupid</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/Steve Lacy - Dark Red.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/dark-red.png" alt="" />
-            <h4 id="currentSong">Steve Lacy - Dark Red</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/The 1975 - About You.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/about-you.png" alt="" />
-            <h4 id="currentSong">The 1975 - About you</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/The 1975 - I Always Wanna Die Sometimes.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/i-always-wanna-die-sometimes.png" alt="" />
-            <h4 id="currentSong">The 1975 - I always wanna die sometimes</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/The Outfield - Your Love.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/your-love.png" alt="" />
-            <h4 id="currentSong">The Outfield - Your love</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/The Ronettes - Be My Baby.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/be-my-baby.png" alt="" />
-            <h4 id="currentSong">The Ronettes - Be my baby</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/The Smiths - Back To The Old House.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/back-to-the-old-house.png" alt="" />
-            <h4 id="currentSong">The Smiths - Back to the old house</h4>
-          </div>
-          <div
-            class="playlist-song"
-            data-audio="audio/You're So Vain.mp3"
-            onclick="playMusic(this)"
-          >
-            <img src="audio-banners/youre-so-vain.png" alt="" />
-            <h4 id="currentSong">Carly Simon - You're so vain</h4>
+          <!-- Wrapped Titles -->
+          <div class="wrapped-container" id="wrapped-container">
+            <div>
+              <img
+                src="audio-banners/al-green-let's-stay-together.png"
+                alt=""
+              />
+              <p>Al Green - Let's Stay Together</p>
+            </div>
+            <div>
+              <img src="audio-banners/anthony-lazaro-moody-wind.png" alt="" />
+              <p>Anthony Lazaro - Moody Wind</p>
+            </div>
+            <div>
+              <img src="audio-banners/bread-guitar-man.png" alt="" />
+              <p>Bread - Guitar Man</p>
+            </div>
+            <div>
+              <img
+                src="audio-banners/dolly-parton-here-you-come-again.png"
+                alt=""
+              />
+              <p>Dolly Parton - Here you come again</p>
+            </div>
+            <div>
+              <img src="audio-banners/islands-in-the-stream.png" alt="" />
+              <p>Dolly Parton & Kenny Rogers- Islands in the stream</p>
+            </div>
+            <div>
+              <img src="audio-banners/alone-again-naturally.png" alt="" />
+              <p>Gilbert O'Sullivan - Alone Again (Naturally)</p>
+            </div>
+            <div>
+              <img
+                src="audio-banners/last-night-on-earth-green-day.png"
+                alt=""
+              />
+              <p>Green Day - Last night on earth</p>
+            </div>
+            <div>
+              <img
+                src="audio-banners/you're-gonna-live-forever-in-me.png"
+                alt=""
+              />
+              <p>John Mayer - You're gonna live forever in me</p>
+            </div>
+            <div>
+              <img
+                src="audio-banners/skeeter-davis-the-end-of-the-world.png"
+                alt=""
+              />
+              <p>Skeeter Davis - The end of the world</p>
+            </div>
+            <div>
+              <img
+                src="audio-banners/somethin-stupid-frank-sinatra.png"
+                alt=""
+              />
+              <p>Frank Sinatra - Somethin' Stupid</p>
+            </div>
+            <div>
+              <img src="audio-banners/dark-red.png" alt="" />
+              <p>Steve Lacy - Dark Red</p>
+            </div>
+            <div>
+              <img src="audio-banners/about-you.png" alt="" />
+              <p>The 1975 - About you</p>
+            </div>
+            <div>
+              <img
+                src="audio-banners/i-always-wanna-die-sometimes.png"
+                alt=""
+              />
+              <p>The 1975 - I always wanna die sometimes</p>
+            </div>
+            <div>
+              <img src="audio-banners/your-love.png" alt="" />
+              <p>The Outfield - Your love</p>
+            </div>
+            <div>
+              <img src="audio-banners/be-my-baby.png" alt="" />
+              <p>The Ronettes - Be my baby</p>
+            </div>
+            <div>
+              <img src="audio-banners/back-to-the-old-house.png" alt="" />
+              <p>The Smiths - Back to the old house</p>
+            </div>
+            <div>
+              <img src="audio-banners/youre-so-vain.png" alt="" />
+              <p>Carly Simon - You're so vain</p>
+            </div>
           </div>
         </div>
-        <div class="spacerFooter"></div>
-        <table>
-          <tr>
-            <td>
-              <center>
-                <a href="index.html">
-                  <img
-                    class="buttons"
-                    id="home_button"
-                    src="contents/home_icon.png"
-                    alt="Cant load image"
-                  />
-                </a>
-              </center>
-            </td>
-          </tr>
-        </table>
+        <div class="play-songs">
+          <div class="now-playing" id="now-playing">
+            <img id="songImage" src="audio-banners/placeholder.png" alt="" />
+            <audio class="audioPlayer" controls id="audioPlayer">
+              <source src="" type="audio/mp3" />
+            </audio>
+            <h2 id="songTitle">No song playing</h2>
+            <div
+              class="fake-player"
+              id="audio-controls-pause-play"
+              onclick="clickHandler()"
+            >
+              <button id="play" class="play"></button>
+              <button id="pause" class="pause"></button>
+            </div>
+          </div>
+          <div class="playlist-1" id="playlist-1">
+            <div
+              class="playlist-song"
+              data-audio="audio/Al Green - Lets Stay Together.mp3"
+              onclick="playMusic(this)"
+            >
+              <img
+                src="audio-banners/al-green-let's-stay-together.png"
+                alt=""
+              />
+              <h4 id="currentSong">Al Green - Let's Stay Together</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/Anthony Lazaro - Moody Wind.mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/anthony-lazaro-moody-wind.png" alt="" />
+              <h4 id="currentSong">Anthony Lazaro - Moody Wind</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/Bread - Guitar Man.mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/bread-guitar-man.png" alt="" />
+              <h4 id="currentSong">Bread - Guitar Man</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/Dolly Parton - Here You Come Again.mp3"
+              onclick="playMusic(this)"
+            >
+              <img
+                src="audio-banners/dolly-parton-here-you-come-again.png"
+                alt=""
+              />
+              <h4 id="currentSong">Dolly Parton - Here you come again</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/Dolly Parton, Kenny Rogers - Islands In the Stream.mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/islands-in-the-stream.png" alt="" />
+              <h4 id="currentSong">
+                Dolly Parton & Kenny Rogers- Islands in the stream
+              </h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/Gilbert O'Sullivan - Alone Again (Naturally).mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/alone-again-naturally.png" alt="" />
+              <h4 id="currentSong">
+                Gilbert O'Sullivan - Alone Again (Naturally)
+              </h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/Green Day -Last Night on Earth.mp3"
+              onclick="playMusic(this)"
+            >
+              <img
+                src="audio-banners/last-night-on-earth-green-day.png"
+                alt=""
+              />
+              <h4 id="currentSong">Green Day - Last night on earth</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/John Mayer - You're Gonna Live Forever In Me.mp3"
+              onclick="playMusic(this)"
+            >
+              <img
+                src="audio-banners/you're-gonna-live-forever-in-me.png"
+                alt=""
+              />
+              <h4 id="currentSong">
+                John Mayer - You're gonna live forever in me
+              </h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/Skeeter Davis - The End Of The World.mp3"
+              onclick="playMusic(this)"
+            >
+              <img
+                src="audio-banners/skeeter-davis-the-end-of-the-world.png"
+                alt=""
+              />
+              <h4 id="currentSong">Skeeter Davis - The end of the world</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/Somethin' Stupid.mp3"
+              onclick="playMusic(this)"
+            >
+              <img
+                src="audio-banners/somethin-stupid-frank-sinatra.png"
+                alt=""
+              />
+              <h4 id="currentSong">Frank Sinatra - Somethin' Stupid</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/Steve Lacy - Dark Red.mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/dark-red.png" alt="" />
+              <h4 id="currentSong">Steve Lacy - Dark Red</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/The 1975 - About You.mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/about-you.png" alt="" />
+              <h4 id="currentSong">The 1975 - About you</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/The 1975 - I Always Wanna Die Sometimes.mp3"
+              onclick="playMusic(this)"
+            >
+              <img
+                src="audio-banners/i-always-wanna-die-sometimes.png"
+                alt=""
+              />
+              <h4 id="currentSong">The 1975 - I always wanna die sometimes</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/The Outfield - Your Love.mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/your-love.png" alt="" />
+              <h4 id="currentSong">The Outfield - Your love</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/The Ronettes - Be My Baby.mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/be-my-baby.png" alt="" />
+              <h4 id="currentSong">The Ronettes - Be my baby</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/The Smiths - Back To The Old House.mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/back-to-the-old-house.png" alt="" />
+              <h4 id="currentSong">The Smiths - Back to the old house</h4>
+            </div>
+            <div
+              class="playlist-song"
+              data-audio="audio/You're So Vain.mp3"
+              onclick="playMusic(this)"
+            >
+              <img src="audio-banners/youre-so-vain.png" alt="" />
+              <h4 id="currentSong">Carly Simon - You're so vain</h4>
+            </div>
+          </div>
+        </div>
       </div>
     </center>
     <script src="music.js"></script>

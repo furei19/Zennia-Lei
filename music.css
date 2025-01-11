@@ -1,36 +1,199 @@
 .now-playing {
-    background-color: white;
-    height: 260px;
-    margin-bottom: 10px;
-    padding: 20px;
+  background-image: linear-gradient(#ffffff 1.1rem, #ccc 1.2rem);
+  background-size: 100% 1.2rem;
+  height: 250px;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .now-playing img {
-    height: 120px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    display: block;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: block;
 }
 
 .playlist-song {
-    background-color: white;
-    display: block;
-    height: 80px;
-    padding: 10px;
-    overflow: hidden;
-    text-align: left;
-    font-size: 20px;
-    margin-bottom: 5px;
-    border-radius: 10px;
+  --color: #e1e1e1;
+  background-color: white;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 55px 55px;
+  display: block;
+  height: 80px;
+  padding: 10px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .playlist-song h4 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .playlist-song img {
-    float: left;
-    height: 100%;
-    margin-right: 10px;
-    border-radius: 10px;
+  float: left;
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.audioPlayer {
+  display: none;
+}
+
+.play-songs {
+  display: none;
+}
+
+/* showcase songs */
+.wrapped-title {
+  margin-bottom: 10px;
+  background-color: white;
+  width: 95%;
+  font-size: 20px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.wrapped-title p {
+  margin: 0;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 15px 0px 0px 0px;
+}
+
+.wrapped-container {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  width: 90%;
+}
+
+.wrapped-container p {
+  font-size: 1.2rem;
+}
+
+.wrapped-container div {
+  --color: #e1e1e1;
+  background-color: white;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 55px 55px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.wrapped-container img {
+  height: 130px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.circle {
+  margin: 20px 0px 0px 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: yellow;
+  float: left;
+}
+
+.arrow {
+  margin-top: 15px;
+  margin-right: 20px;
+  float: right;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid yellow;
+}
+
+.arrow-down {
+  display: none;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-left: -14px;
+  float: right;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid yellow;
+}
+
+/* For non mobiles */
+@media (min-width: 601px) {
+  .now-playing {
+    width: 95%;
+  }
+
+  .wrapped-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 801px) {
+  .wrapped-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1001px) {
+  .wrapped-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1201px) {
+  .wrapped-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 }
