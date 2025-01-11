@@ -1,3 +1,9 @@
+@media (min-width: 401px) {
+  .main-content {
+    width: 90%;
+  }
+}
+
 .main-content {
   display: none;
 }
@@ -8,7 +14,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f0f0f0; /* Background color */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +25,7 @@
 }
 
 .loading-spacer {
-  height: 200px;
+  height: 100px;
 }
 
 /* From Uiverse.io by Nawsome */
@@ -490,4 +495,63 @@ button:hover span {
 .btn-shine:hover:after {
   left: 120%;
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* blay pause button */
+
+:root {
+  --button-height: 1rem;
+  --button-color: black;
+}
+
+.fake-player {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  heigth: 2rem;
+  padding: 1rem;
+  border: 0.2rem solid var(--button-color);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 3.1rem rgba(255, 255, 255, 0.8));
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.play {
+  display: none;
+  height: 0;
+  width: 0;
+  margin-left: calc(2 * 0.14 * var(--button-height));
+  background: none;
+  border: none;
+  border-top: var(--button-height) solid transparent;
+  border-bottom: var(--button-height) solid transparent;
+  border-left: calc(var(--button-height) * 2 * 0.86) solid var(--button-color);
+}
+
+.pause {
+  position: relative;
+  background: none;
+  border: none;
+  height: calc(var(--button-height) * 2);
+  width: calc(var(--button-height) * 2 * 0.86);
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 33%;
+    background: var(--button-color);
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
 }

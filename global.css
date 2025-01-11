@@ -1,48 +1,99 @@
 @font-face {
-    font-family: handwriting;
-    src: url(Pixelify_Sans/PatrickHand-Regular.ttf);
+  font-family: handwriting;
+  src: url(Pixelify_Sans/PatrickHand-Regular.ttf);
 }
 
 ::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
+  display: none; /* For Chrome, Safari, and Opera */
 }
 
 body,
 html {
-    font-family: handwriting;
-    background-color: #adccce;
-    user-select: none;
-}
-
-.spacerFooter {
-    height: 100px;
-}
-
-table {
-    left: 0;
-    bottom: 0;
-    position: fixed;
-    background-color: white;
-    height: 90px;
-    width: 100%;
+  --color: #e1e1e1;
+  background-color: #adccce;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 55px 55px;
+  height: 100%;
+  font-family: handwriting;
+  user-select: none;
+  margin: 0;
 }
 
 .buttons {
-    background-color: #adccce;
-    color: black;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 60px;
-    border-radius: 50%;
-    text-decoration: none;
+  background-color: #adccce;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 60px;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
 .buttons:hover {
-    background-color: #adccce;
-    color: black;
+  background-color: #adccce;
+  color: black;
 }
 
 .buttons:active {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
+}
+
+.header-spacer {
+  height: 90px;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  padding: 15px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.nav-bar p {
+  font-size: 30px;
+  margin: 0;
+  padding-left: 10px;
+  float: left;
+}
+
+.img-logo {
+  float: left;
+  width: 50px;
+  padding-left: 15px;
+  border-radius: 50%;
+}
+
+.home-button {
+  height: 50px;
+  padding: 5px;
+  margin: -10px 15px 0px 0px;
+  float: right;
+  border-radius: 50%;
+  background-color: yellow;
 }

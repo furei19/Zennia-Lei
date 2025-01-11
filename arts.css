@@ -1,0 +1,47 @@
+.art-title {
+  margin-bottom: 10px;
+  background-color: white;
+  width: 95%;
+  font-size: 20px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.art-title p {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 15px 0px 0px 0px;
+}
+
+.art-container {
+  width: 90%;
+}
+
+.art-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.art-container p {
+  font-size: 1.2rem;
+}
+
+.download {
+  background-color: rgb(255, 59, 59);
+  color: white;
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 10px 20px 10px;
+  padding: 10px;
+}
+
+.art-container div {
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+}
